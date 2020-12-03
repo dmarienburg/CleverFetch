@@ -1,7 +1,8 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh
+fh = open("README.md", "r")
+long_description = fh.read()
+fh.close()
 
 setuptools.setup(
     name="cleverfetch-pkg-dmarienburg",
@@ -14,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Langauge :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: MIT License",
         "Operating System :: OS Independent"
     ],
     python_requires=">=3.0"
