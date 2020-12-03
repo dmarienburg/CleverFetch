@@ -1,6 +1,6 @@
 # CleverFetch
 
-A simple script for automating your downloads of data from the Clever SMS sftp site.
+A simple script for automating your downloads of data from the Clever sftp site.
 
 Author: David Marienburg  
 Version: 1.0  
