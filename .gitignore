@@ -1,3 +1,6 @@
 *.csv
 *.pyc
-__pycache__
+__pycache__/
+dist/
+build/
+cleverfetch_pkg_dmarienburg.egg-info/
