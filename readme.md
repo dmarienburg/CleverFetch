@@ -9,11 +9,13 @@ Last Update: 2020-12-03
 ***
 
 ## Requirements
-* Paramiko - https://pypi.org/project/paramiko/
+
+* Paramiko - [https://pypi.org/project/paramiko/](https://pypi.org/project/paramiko/)
 
 ***
 
 ## Usage
+
 Using the script is simple, just import the `get_files` method, passing it a username and a password.
 
 ```python
