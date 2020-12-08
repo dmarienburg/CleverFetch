@@ -6,7 +6,7 @@ fh.close()
 
 setuptools.setup(
     name="cleverfetch-pkg-dmarienburg",
-    version="1.0",
+    version="1.0.1b",
     author="David Marienburg",
     author_email="david.marienburg@gmail.com",
     description="A simple script for automating your downloads of data from the Clever sftp site",
