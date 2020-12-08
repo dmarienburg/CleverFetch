@@ -3,8 +3,8 @@
 A simple script for automating your downloads of data from the Clever sftp site.
 
 Author: David Marienburg  
-Version: 1.0  
-Last Update: 2020-12-03
+Version: 1.0.1b  
+Last Update: 2020-12-07
 
 ***
 
