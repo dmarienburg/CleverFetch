@@ -5,7 +5,7 @@ import re
 from os import path as p
 from os import  listdir
 
-def get_files(username:str=None, password:str=None, save_path:str=None):
+def get_files(username:str=None, password:str=None, save_path:str=None, **kwargs):
     """
     :param username: Your Clever SFTP username
     
@@ -27,6 +27,24 @@ def get_files(username:str=None, password:str=None, save_path:str=None):
     :return: a list of file paths containing only files that were added in the
     most recent run of the script.
     """
+    # if the username, password, and/or save_paths were not passed as params
+    # check to see if they were passed as a dict
+    if not username:
+        try:
+            username = kwargs["username"]
+        except KeyError:
+            raise KeyError("A value was not provided for the 'username' parameter.")
+    if not password:
+        try:
+            password = kwargs["password"]
+        except KeyError:
+            raise KeyError("A value was not provided for the 'password' parameter.")
+    if not save_path:
+        try:
+            save_path = kwargs["save_path"]
+        except KeyError:
+            pass
+
     host = "reports-sftp.clever.com"
     port = 22
     transport = pm.Transport((host, port))
